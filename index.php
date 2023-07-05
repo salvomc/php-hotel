@@ -52,7 +52,7 @@
                 <th>Descrizione</th>
                 <th>Parcheggio</th>
                 <th>Voto</th>
-                <th>Distanza dal centro (KM)</th>
+                <th>Distanza dal centro</th>
             </tr>
         </thead>
         <tbody class="border border-info">
@@ -71,14 +71,14 @@
                                 <?php
                                     if ($hotel['parking']) 
                                     {
-                                        echo 'true';
+                                        echo 'Sì';
                                     } else {
-                                            echo 'false';
+                                            echo 'No';
                                            }
                                 ?>
                             </td>
                             <td><?php echo $hotel['vote']; ?></td>
-                            <td><?php echo $hotel['distance_to_center']; ?></td>
+                            <td><?php echo $hotel['distance_to_center']; ?> KM</td>
                             </tr>
             <?php
                         }
